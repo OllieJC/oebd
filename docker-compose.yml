@@ -1,0 +1,17 @@
+---
+version: "3.8"
+services:
+  oebd:
+    user: "1000"
+    image: ghcr.io/olliejc/oebd:latest
+    container_name: oebd
+    hostname: oebd
+    restart: unless-stopped
+    # depends_on:
+    #   - paperless
+    # volumes:
+    #   - /opt/paperless/consume:/app/consume
+    environment:
+      OCTOPUS_USERNAME: abc
+      OCTOPUS_PASSWORD: 123
+      # SAVE_LOCATION: /app/consume
