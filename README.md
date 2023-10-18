@@ -6,7 +6,7 @@ OEBD is a tool for getting [Octopus Energy](https://octopus.energy/) bill PDFs a
 ![Once example output](oebd_output_once.png)
 
 ### Daemon example output
-![Daemon example output](oebd_output_deamon.png)
+![Daemon example output](oebd_output_daemon.png)
 
 ### Paperless screenshot
 ![Paperless screenshot](oebd_paperless.png)
