@@ -8,7 +8,6 @@ from datetime import datetime, timedelta
 OCTOPUS_USERNAME = os.getenv("OCTOPUS_USERNAME")
 OCTOPUS_PASSWORD = os.getenv("OCTOPUS_PASSWORD")
 BILL_COUNT = int(os.getenv("BILL_COUNT", "1"))
-DOWNLOAD_ONCE = int(os.getenv("DOWNLOAD_ONCE", "1"))
 SAVE_LOCATION = os.getenv("SAVE_LOCATION", ".")
 DOWNLOAD_TIME = os.getenv(
     "DOWNLOAD_TIME", f"{random.randint(0, 23):02}:{random.randint(1, 59):02}"
