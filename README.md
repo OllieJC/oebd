@@ -1,6 +1,6 @@
 # Octopus Energy Bill Downloader (OEBD)
 
-OEBD is a tool for getting [Octopus Energy](https://octopus.energy/) bill PDFs automatically. The original use-case for this tool was for automatic consumption into [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx); see the [docker-compose.yml]([docker-compose.yml]) example, which I run in Portainer in my Paperless-ngx stack.
+OEBD is a tool for getting [Octopus Energy](https://octopus.energy/) bill PDFs automatically. The original use-case for this tool was for automatic consumption into [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx); see the [docker-compose.yml](docker-compose.yml) example, which I run in Portainer in my Paperless-ngx stack.
 
 ### Run once example output
 ![Once example output](oebd_output_once.png)
