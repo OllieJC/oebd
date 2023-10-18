@@ -26,7 +26,8 @@ docker run \
   -v "${pwd}/bills:/app/consume" \
   -e SAVE_LOCATION="/app/consume" \
   --name oebd_once \
-  -t $(docker build -q .)
+  -t ghcr.io/olliejc/oebd
+  # -t $(docker build -q .)
 
 # Scheduled looping downloader
 docker run \
@@ -36,7 +37,8 @@ docker run \
   -e SAVE_LOCATION="/app/consume" \
   --name oebd_daemon \
   --restart=unless-stopped \
-  -d $(docker build -q .)
+  -d ghcr.io/olliejc/oebd
+  # -d $(docker build -q .)
 ```
 
 ### Linux
