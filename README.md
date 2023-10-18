@@ -2,6 +2,15 @@
 
 OEBD is a tool for getting [Octopus Energy](https://octopus.energy/) bill PDFs automatically. The original use-case for this tool was for automatic consumption into [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx).
 
+### Run once example output
+![Once example output](oebd_output_once.png)
+
+### Daemon example output
+![Daemon example output](oebd_output_deamon.png)
+
+### Paperless screenshot
+![Paperless screenshot](oebd_paperless.png)
+
 ## Usage
 
 ### Docker
@@ -25,7 +34,7 @@ docker run \
   -e OCTOPUS_PASSWORD="123" \
   -v "${pwd}/bills:/app/consume" \
   -e SAVE_LOCATION="/app/consume" \
-  --name oebd_deamon \
+  --name oebd_daemon \
   --restart=unless-stopped \
   -d $(docker build -q .)
 ```
